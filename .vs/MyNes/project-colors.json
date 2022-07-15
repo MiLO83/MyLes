@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "261408db-307c-4e04-8264-18020a7a3beb": {
+      "ProjectGuid": "261408db-307c-4e04-8264-18020a7a3beb",
+      "DisplayName": "MyNes",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "040d1a02-33be-42aa-a820-ea08f6fe8fa1": {
+      "ProjectGuid": "040d1a02-33be-42aa-a820-ea08f6fe8fa1",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

@@ -1,0 +1,22 @@
+My Nes Version 7.13.8087.35622
+Built at 21 February 2022 19:47
+-------------
+
+- Improved Audio Downsampler. 
+- Improved Audio generally.
+- Improved performance by converting audio samples from integers into bytes.
+- Audio now is output in unsigned 8 bit instead of signed 16 bit, it is correct for nes.
+- Improved SlimDX DirectSound renderer, it sounds now better and stable.
+
+### Notes:
+
+- It may sound error sometimes with some games, but it is correct. Since nes sound output is about 179 MHz and
+  Audio Channels might sound up to 444000 Hz, so downsampling from 444000 Hz into 44100 Hz will result a loss of resolution.
+  Applying fixes like taking averages of samples proved to be wrong, so in My Nes, the downsampler now just do downsampling
+  without any fix. This is correct but might sound error, this is normal due to the loss of resolution.
+- Nes when outputing audio samples and mixed together, they are range from 0 into 1 in amplitude. If we try to convert
+  that to 8 bit samples or signed 16 bits will result errors and corruption in sound. The correct convert is from 0-1 apm into 
+  0-127 value or 0 - 0x7F. My Nes now output sound in 8bits with range of 0 - 127, applying a simple fix as well that makes sure
+  no sample is 0 (DB Fix, see <https://github.com/alaahadid/Docs/blob/main/Audio%20And%20DB.txt>) to make the sound 100 % correct.
+- Performance is improved by using 8 bit audio samples instead of 16 bit samples, also renderer now control speed correctly to
+  make sure audio samples are played correctly in time. This affect performance and accuracy of fps.
