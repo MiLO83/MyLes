@@ -2159,7 +2159,7 @@ namespace MyNes
         {
             try
             {
-                System.Diagnostics.Process.Start("https://github.com/alaahadid/My-Nes");
+                System.Diagnostics.Process.Start("https://github.com/jegqamas/My-Nes");
             }
             catch (Exception ex)
             {
@@ -2643,7 +2643,7 @@ namespace MyNes
         }
         private void myNesWikiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try { System.Diagnostics.Process.Start("https://github.com/alaahadid/My-Nes/wiki"); } catch { }
+            try { System.Diagnostics.Process.Start("https://github.com/jegqamas/My-Nes/wiki"); } catch { }
         }
         private void resolutionToolStripMenuItem_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {

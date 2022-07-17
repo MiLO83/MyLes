@@ -49,7 +49,7 @@ namespace MyNes.Core
         }
         private static int MakeRGBColor(int pixel_data, int system_index)
         {
-            // Implements the color decoding as written here <https://github.com/alaahadid/Nes-Docs/blob/main/Color%20Decoding%20In%20PPU.txt>.
+            // Implements the color decoding as written here <https://github.com/jegqamas/Nes-Docs/blob/main/Color%20Decoding%20In%20PPU.txt>.
             // It is better to be stored in color indexes for better performance
 
 

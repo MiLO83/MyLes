@@ -17,6 +17,6 @@ Built at 21 February 2022 19:47
 - Nes when outputing audio samples and mixed together, they are range from 0 into 1 in amplitude. If we try to convert
   that to 8 bit samples or signed 16 bits will result errors and corruption in sound. The correct convert is from 0-1 apm into 
   0-127 value or 0 - 0x7F. My Nes now output sound in 8bits with range of 0 - 127, applying a simple fix as well that makes sure
-  no sample is 0 (DB Fix, see <https://github.com/alaahadid/Docs/blob/main/Audio%20And%20DB.txt>) to make the sound 100 % correct.
+  no sample is 0 (DB Fix, see <https://github.com/jegqamas/Docs/blob/main/Audio%20And%20DB.txt>) to make the sound 100 % correct.
 - Performance is improved by using 8 bit audio samples instead of 16 bit samples, also renderer now control speed correctly to
   make sure audio samples are played correctly in time. This affect performance and accuracy of fps.

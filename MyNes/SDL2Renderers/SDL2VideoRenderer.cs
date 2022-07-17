@@ -693,7 +693,7 @@ namespace MyNes
             else
             {
                 // Res of 640 x 480, 3:2 of 1:1 of 256 x 240. For NTSC and PAL.
-                // Implementing the Resolution-Blocks-Upscaler method for image upscaling <https://github.com/alaahadid/Resolution-Blocks-Upscaler>
+                // Implementing the Resolution-Blocks-Upscaler method for image upscaling <https://github.com/jegqamas/Resolution-Blocks-Upscaler>
                 current_x_t = 0;
                 current_y_t = 0;
                 add_y_flip_flop = false;

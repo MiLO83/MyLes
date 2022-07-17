@@ -740,7 +740,7 @@ namespace MyNes.Core
                 }
 
                 audio_x_av = audio_x * 127;// There is no possible other transform from 0-1 into bits. It works only from range 0-1 into 0-127.
-                audio_x_av++;// Add 1 to make sure there is no sample 0, db fix. See <https://github.com/alaahadid/Docs/blob/main/Audio%20And%20DB.txt>
+                audio_x_av++;// Add 1 to make sure there is no sample 0, db fix. See <https://github.com/jegqamas/Docs/blob/main/Audio%20And%20DB.txt>
 
                 audio_y = (byte)((int)audio_x_av & 0xFF);
 
@@ -790,7 +790,7 @@ namespace MyNes.Core
                 }
 
                 // There is no possible other transform from 0-1 into bits. It works only from range 0-1 into 0-127.
-                // Add 1 to make sure there is no sample 0, db fix. See <https://github.com/alaahadid/Docs/blob/main/Audio%20And%20DB.txt>
+                // Add 1 to make sure there is no sample 0, db fix. See <https://github.com/jegqamas/Docs/blob/main/Audio%20And%20DB.txt>
                 audio_left_x_av = (audio_left_x * 127) + 1;
 
                 /*RIGHT CHANNEL*/
@@ -811,7 +811,7 @@ namespace MyNes.Core
                     audio_right_x = (audio_right_x + mem_board.APUGetSample()) / 2; // should be 0-1.0 (0 - 100 %) since expected mixed value from external sound channels should be 0 to 1.0 as well
                 }
                 // There is no possible other transform from 0-1 into bits. It works only from range 0-1 into 0-127.
-                // Add 1 to make sure there is no sample 0, db fix. See <https://github.com/alaahadid/Docs/blob/main/Audio%20And%20DB.txt>
+                // Add 1 to make sure there is no sample 0, db fix. See <https://github.com/jegqamas/Docs/blob/main/Audio%20And%20DB.txt>
                 audio_right_x_av = (audio_right_x * 127) + 1;
 
                 // Write into buffer
