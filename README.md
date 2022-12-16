@@ -10,20 +10,6 @@ my NES is a portable open source NES/Famicom emulator written in C#.
 
 ANES (Agile Nes) is a command-line base emulator written on C base on My Nes (same emu features), it run in Windows and Linux. It may run faster on older machines, also it can be compiled into another platforms since it is written in C and uses SDL2 only.
 
-## Donation
-
-*Donation now can be done using PayPal - The safer, easier way to pay online!*
-
-*To Donate, please click on this button below*
-
-[![Donation](https://www.paypalobjects.com/en_US/DE/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?hosted_button_id=KV25VFRMVKLM2)
-
-*Also QR code can be scaned to do so !!*
-
-![Donate QR Code](https://github.com/jegqamas/AHD-Subtitles-Maker/blob/main/QR%20Code.png)
-
-*Thanks in advance :)*
-
 ## Introduction
 My Nes is A Nintendo Entertainment System / Family Computer (Nes/Famicom) emulator written in C#. 
 An open source .net freeware, licensed under the GNU GENERAL PUBLIC LICENSE; Version 3, 29 June 2007.
